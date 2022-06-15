@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bgc-blue: #0084FD;
+    --bgc-light-blue: #B5DDFF;
+
+    --bgc-violet: #9792E5;
+}
+
+header{
+    background-color: var(--bgc-blue);
+    height: 100px;
+}
+
+.header-container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 1.5rem;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+
+/*
+regole debug
+*/
+
+.debug .header-container .item{
+    background-color: var(--bgc-light-blue);
+    padding: 30px;
+}
