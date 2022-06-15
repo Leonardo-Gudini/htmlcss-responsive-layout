@@ -9,6 +9,7 @@
     --bgc-light-blue: #B5DDFF;
 
     --bgc-violet: #9792E5;
+    --bgc-footer: #787878;
 }
 
 header{
@@ -61,7 +62,7 @@ header{
     padding: 1.5rem;
 }
 
-.testimonial-text{
+.section-center-text{
     text-align: center;
     margin: 2rem auto;
 }
@@ -78,6 +79,47 @@ header{
     padding-right: 1.5rem;
 }
 
+#benefits{
+    background-color: var(--bgc-violet);
+    padding: 2rem 0;
+}
+
+#benefits .card{
+    background-color: white;
+    padding: 1.5rem;
+    margin: 1.5rem 1.5rem;
+}
+
+#about-us .container>*{
+    margin: 1.5rem 1.5rem;
+}
+
+#get-started{
+    background-color: var(--bgc-violet);
+    padding: 2rem 1.5rem;
+}
+
+.middle-txt-container>*{
+    margin: 1.5rem auto;
+    text-align: center;
+}
+
+footer{
+    height: 100%;
+    padding: 1.5rem 0;
+    background-color: var(--bgc-footer);
+}
+
+.middle-txt-container{
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
 /*
 REGOLE MEDIA QUERY
 */
@@ -86,6 +128,7 @@ REGOLE MEDIA QUERY
 media query TABLET
 */
 @media screen and (min-width: 768px) {
+
     #demo-app .container{
         display: flex;
         flex-wrap: wrap;
@@ -96,12 +139,25 @@ media query TABLET
         width: calc((100% / 3) - 1.5rem );
     }
 
-    .container .card:first-child{
+    #demo-app .container .card:first-child{
         width: calc((100% / 3 * 2) - 1.5rem);
     } 
 
-    #testimonial .item{
+    #testimonial .item, #about-us .container{
         display: flex;
+    }
+
+    #benefits .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #benefits .card{
+        width: calc((100% / 2) - 3rem)
+    }
+
+    #about-us{
+        padding: 2rem 0;
     }
 }
 
@@ -121,15 +177,15 @@ media query DESKTOP
         padding: 0 1.5rem;
     }
 
-    .container .card:first-child{
+    #demo-app .container .card:first-child{
         display: flex;
     }
     
-    .card:first-child>*{
+    #demo-app .card:first-child>*{
         width: 50%;
     }
 
-    .card:first-child .card-img{
+    #demo-app .card:first-child .card-img{
         align-self: flex-end;
     }
 
@@ -139,7 +195,9 @@ media query DESKTOP
         padding: 6rem 5rem 3rem 5rem;
     }
 
-    
+    #benefits .card{
+        width: calc((100% / 3) - 3rem);
+    }
 }
 
 
