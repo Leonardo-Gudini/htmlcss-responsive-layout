@@ -21,7 +21,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 1.5rem;
+    margin: 0 0.75rem;
 }
 
 .menu ul{
@@ -29,11 +29,121 @@ header{
     list-style: none;
 }
 
+#demo-app{
+    margin: 1.5rem 0rem;
+}
+
+#demo-app .card{
+    height: 200px;
+    background-color: var(--bgc-light-blue);
+    padding: 20px;
+    margin: 0 0.75rem;
+    margin-bottom: 1.5rem;
+    border-radius: 20px;
+}
+
+#planning{
+    background-color: var(--bgc-violet);
+}
+
+#planning .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0 2rem 0;
+}
+
+#planning .card{
+    margin: 1.5rem;
+}
+
+.testimonial-text{
+    text-align: center;
+    margin: 2rem auto;
+}
+
+/*
+REGOLE MEDIA QUERY
+*/
+
+/*
+media query TABLET
+*/
+@media screen and (min-width: 768px) {
+    #demo-app .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container .card{
+        /* width: 30%; */
+        width: calc((100% / 3) - 1.5rem );
+    }
+
+    .container .card:first-child{
+        width: calc((100% / 3 * 2) - 1.5rem);
+    } 
+}
+
+/*
+media query DESKTOP
+*/
+
+@media screen and (min-width: 992px) {
+    
+    .header-container{
+        padding: 0 1.5rem;
+    }
+
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
+
+    .container .card:first-child{
+        display: flex;
+    }
+    
+    .card:first-child>*{
+        width: 50%;
+    }
+
+    .card:first-child .card-img{
+        align-self: flex-end;
+    }
+
+    #planning .container{
+        flex-direction: row;
+        justify-content: center;
+        padding: 6rem 5rem 3rem 5rem;
+    }
+
+    
+}
+
+
+
+
+
+
 /*
 regole debug
 */
 
-.debug .header-container .item{
+.debug .container .item{
     background-color: var(--bgc-light-blue);
     padding: 30px;
+}
+
+.debug #demo-app .card{
+    height: 300px;
+}
+
+.debug .card{
+    background-color: #E2CBFF;
+}
+
+.debug #planning .card>*{
+    padding: 20px;
 }
