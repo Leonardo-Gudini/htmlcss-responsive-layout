@@ -474,8 +474,7 @@ media query TABLET
         padding: 0 0.75rem;
     }
 
-    .container .card{
-        /* width: 30%; */
+    #demo-app .container .card{
         width: calc((100% / 3) - 1.5rem );
     }
 
