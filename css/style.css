@@ -4,38 +4,112 @@
     box-sizing: border-box;
 }
 
+html{
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+h3{
+    margin: 1rem 0;
+}
+
+
+/*
+COLOR PALETTE
+*/
 :root{
     --bgc-blue: #0084FD;
     --bgc-light-blue: #B5DDFF;
 
     --bgc-violet: #9792E5;
     --bgc-footer: #787878;
+
+    --txt-white: #fff;
+    --txt-black: #000;
 }
 
+
+/*
+SEZIONE HEADER
+*/
 header{
     background-color: var(--bgc-blue);
-    height: 100px;
+    height: 80px;
+}
+
+.flex{
+    display: flex;
 }
 
 .header-container{
     height: 100%;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 0.75rem;
 }
 
 .menu ul{
-    display: flex;
     list-style: none;
 }
 
+ul a{
+    text-decoration: none;
+    padding: 0 1.5rem;
+    color: var(--txt-white);
+}
+
+/*
+REGOLE BOTTONI
+*/
+header .btn{
+    color: var(--txt-black);
+}
+
+.btn{
+    border-radius: 20px;
+    text-decoration: none;
+    
+}
+
+.btn-white{
+    background-color: var(--txt-white);
+}
+
+.btn-blue{
+    background-color: var(--bgc-blue);
+    color: var(--txt-white);
+}
+
+.btn-small{
+    padding: 0.5rem 1rem;
+}
+
+.btn i{
+    color: var(--txt-white);
+}
+
+header .hamburger{
+    font-size: 2rem;
+    color: var(--txt-white);
+}
+
+header .nav-menu{
+    display: none;
+}
+
+
+/*
+SEZIONE DEMO APPLICATION
+*/
 #demo-app{
     margin: 1.5rem 0rem;
 }
 
+#demo-app h3{
+    color: var(--bgc-blue);
+}
+
 #demo-app .card{
-    height: 200px;
     background-color: var(--bgc-light-blue);
     padding: 20px;
     margin: 0 0.75rem;
@@ -43,12 +117,37 @@ header{
     border-radius: 20px;
 }
 
+#demo-app .card1{
+    padding: 0;
+}
+
+.card1 .card-txt{
+    margin: 20px;
+}
+
+#demo-app .card p{
+    margin: 2rem 0;
+}
+
+.card .btn i{
+    color: var(--txt-white);
+    margin-right: 0.5rem;
+}
+
+.card img{
+    width: 70%;
+    display: block;
+}
+
+
+/*
+SEZIONE PLANNING
+*/
 #planning{
     background-color: var(--bgc-violet);
 }
 
 #planning .container{
-    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 4rem 0 2rem 0;
@@ -58,6 +157,10 @@ header{
     margin: 1.5em;
 }
 
+
+/*
+SEZIONE TESTIMONIAL
+*/
 #testimonial .container{
     padding: 1.5rem;
 }
@@ -79,6 +182,10 @@ header{
     padding-right: 1.5rem;
 }
 
+
+/*
+SEZIONE BENEFITS
+*/
 #benefits{
     background-color: var(--bgc-violet);
     padding: 2rem 0;
@@ -90,30 +197,52 @@ header{
     margin: 1.5rem 1.5rem;
 }
 
+
+/*
+SEZIONE ABOUT US
+*/
 #about-us .container>*{
     margin: 1.5rem 1.5rem;
 }
 
+
+/*
+SEZIONE GET STARTED
+*/
 #get-started{
     background-color: var(--bgc-violet);
     padding: 2rem 1.5rem;
 }
 
+
+/*
+REGOLE ALLINEAMENTO TESTO CENTRLE
+*/
 .middle-txt-container>*{
     margin: 1.5rem auto;
     text-align: center;
-}
-
-footer{
-    height: 100%;
-    padding: 1.5rem 0;
-    background-color: var(--bgc-footer);
 }
 
 .middle-txt-container{
     max-width: 350px;
     margin: 0 auto;
 }
+
+.middle-txt{
+    text-align: center;
+}
+
+
+/*
+SEZIONE FOOTER
+*/
+footer{
+    height: 100%;
+    padding: 1.5rem 0;
+    background-color: var(--bgc-footer);
+}
+
+
 
 
 
@@ -132,6 +261,7 @@ media query TABLET
     #demo-app .container{
         display: flex;
         flex-wrap: wrap;
+        padding: 0 0.75rem;
     }
 
     .container .card{
@@ -171,6 +301,14 @@ media query DESKTOP
         padding: 0 1.5rem;
     }
 
+    header .nav-menu{
+        display: flex;
+    }
+
+    header .hamburger{
+        display: none;
+    }
+
     .container{
         max-width: 1200px;
         margin: 0 auto;
@@ -206,10 +344,10 @@ media query DESKTOP
 
 
 /*
-regole debug
+REGOLE DI DEBUG
 */
 
-.debug .container .header-item{
+/* .debug .container .header-item{
     background-color: var(--bgc-light-blue);
     padding: 30px;
 }
@@ -224,4 +362,4 @@ regole debug
 
 .debug #planning .card>*{
     padding: 20px;
-}
+} */
