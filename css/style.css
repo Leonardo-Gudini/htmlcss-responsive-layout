@@ -13,6 +13,12 @@ h3{
     margin: 1rem 0;
 }
 
+p{
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
 img{
     width: 100%;
     padding: 1.5rem;
@@ -74,7 +80,8 @@ header .btn{
 .btn{
     border-radius: 20px;
     text-decoration: none;
-    
+    text-align: center;
+    padding: 0 1.5rem;
 }
 
 .btn-white{
@@ -88,6 +95,7 @@ header .btn{
 
 .btn-violet{
     background-color: var(--bgc-violet);
+    color: var(--txt-white);
 }
 
 #benefits .btn{
@@ -280,6 +288,11 @@ SEZIONE BENEFITS
     padding: 2rem 0;
 }
 
+#benefits h2{
+    font-size: 2.5rem;
+    color: var(--txt-white);
+}
+
 #benefits .card>*{
     margin: 1.5rem 0;
 }
@@ -303,12 +316,56 @@ SEZIONE BENEFITS
     background-color: white;
     padding: 1.5rem;
     margin: 1.5rem 1.5rem;
+    border-radius: 20px;
 }
 
 
 /*
 SEZIONE ABOUT US
 */
+
+#about-us h2{
+    font-size: 3em;
+    text-align: left;
+    padding: 0 1.5rem;
+    color: var(--bgc-violet);
+}
+
+#about-us p{
+    margin-top: 2rem;
+}
+
+#about-us .img-quote-container{
+    position: relative;
+    width: 50%;
+}
+
+#about-us img{
+    border-radius: 50%;
+    padding: 0;
+    width: 100%;
+}
+
+#about-us .quote{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--bgc-violet);
+    font-size: 4rem;
+}
+
+#about-us .txt-btn p{
+    margin: 1.5rem 0;
+    font-size: 2rem;
+    color: var(--bgc-violet);
+    font-weight: bold;
+}
+
+#about-us .btn a{
+    color: var(--txt-white);
+    text-decoration: none;
+}
+
 #about-us .container>*{
     margin: 1.5rem 1.5rem;
 }
@@ -404,6 +461,14 @@ media query TABLET
 
     #about-us{
         padding: 2rem 0;
+    }
+
+    #about-us .text{
+        width: 70%;
+    }
+
+    #about-us .img{
+        width: 30%;
     }
 }
 
