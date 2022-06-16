@@ -13,6 +13,11 @@ h3{
     margin: 1rem 0;
 }
 
+img{
+    width: 100%;
+    padding: 1.5rem;
+}
+
 
 /*
 COLOR PALETTE
@@ -26,6 +31,7 @@ COLOR PALETTE
 
     --txt-white: #fff;
     --txt-black: #000;
+    --txt-gray: #808080;
 }
 
 
@@ -80,6 +86,14 @@ header .btn{
     color: var(--txt-white);
 }
 
+.btn-violet{
+    background-color: var(--bgc-violet);
+}
+
+#benefits .btn{
+    width: 50%;
+}
+
 .btn-small{
     padding: 0.5rem 1rem;
 }
@@ -122,7 +136,7 @@ SEZIONE DEMO APPLICATION
 }
 
 .card1 .card-txt{
-    margin: 20px;
+    padding: 20px;
 }
 
 #demo-app .card p{
@@ -134,8 +148,14 @@ SEZIONE DEMO APPLICATION
     margin-right: 0.5rem;
 }
 
-.card img{
-    width: 70%;
+.card .card-img i{
+    font-size: 5rem;
+    color: var(--bgc-blue);
+}
+
+#demo-app .card img{
+    width: 60%;
+    margin-top: 3rem;
     display: block;
 }
 
@@ -157,17 +177,58 @@ SEZIONE PLANNING
     margin: 1.5em;
 }
 
+#planning h3, #planning{
+    color: var(--txt-white);
+
+}
+
+#planning .card .arrow{
+    color: var(--txt-black);
+    padding: 1.5rem;
+    background-color: var(--bgc-violet);
+    border-radius: 50%;
+}
+
+
+#planning .planning2 i{
+    font-size: 1rem;
+}
+
+#planning .container .planning2{
+    background-color: var(--txt-white);
+    color: var(--txt-black);
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#planning p{
+    margin: 3rem 0;
+}
+
+
 
 /*
 SEZIONE TESTIMONIAL
 */
+
+#testimonial h2{
+    font-size: 2.5rem;
+    color: var(--bgc-violet);
+}
 #testimonial .container{
     padding: 1.5rem;
 }
 
 .section-center-text{
+    max-width: 1200px;
     text-align: center;
     margin: 2rem auto;
+    font-weight: 100;
+}
+
+.section-center-text>*{
+    margin: 1.5rem 0;
 }
 
 #testimonial .item{
@@ -182,6 +243,34 @@ SEZIONE TESTIMONIAL
     padding-right: 1.5rem;
 }
 
+#testimonial .testimonial-container{
+    width: auto;
+    height: 200px;
+}
+
+.testimonial-container img{
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: center;
+}
+
+#testimonial .testimonial-txt{
+    color: var(--txt-white);
+    text-align: center;
+}
+
+.testimonial-txt i{
+    font-size: 2rem;
+}
+
+.testimonial-txt div{
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 
 /*
 SEZIONE BENEFITS
@@ -189,6 +278,25 @@ SEZIONE BENEFITS
 #benefits{
     background-color: var(--bgc-violet);
     padding: 2rem 0;
+}
+
+#benefits .card>*{
+    margin: 1.5rem 0;
+}
+
+#benefits .number{
+    font-size: 4rem;
+    color: var(--bgc-violet);
+}
+
+#benefits .title{
+    font-size: 1.2rem;
+    color: var(--bgc-violet);
+    font-weight: bold;
+}
+
+#benefits p{
+    color: var(--txt-gray);
 }
 
 #benefits .card{
@@ -275,6 +383,14 @@ media query TABLET
 
     #testimonial .item, #about-us .container{
         display: flex;
+    }
+
+    #testimonial .item{
+        align-items: center;
+    }
+
+    #testimonial .testimonial-txt{
+        text-align: left;
     }
 
     #benefits .container{
