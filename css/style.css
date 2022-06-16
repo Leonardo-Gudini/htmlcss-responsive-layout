@@ -17,11 +17,16 @@ p{
     line-height: 2rem;
     font-size: 1.2rem;
     font-weight: 100;
+    color: var(--txt-white);
 }
 
 img{
     width: 100%;
     padding: 1.5rem;
+}
+
+a{
+    color: var(--txt-white);
 }
 
 
@@ -33,11 +38,12 @@ COLOR PALETTE
     --bgc-light-blue: #B5DDFF;
 
     --bgc-violet: #9792E5;
-    --bgc-footer: #787878;
+    --bgc-footer: #333333;
 
     --txt-white: #fff;
     --txt-black: #000;
     --txt-gray: #808080;
+    --txt-yellow: #FDC15E;
 }
 
 
@@ -104,6 +110,10 @@ header .btn{
 
 .btn-small{
     padding: 0.5rem 1rem;
+}
+
+.btn-big{
+    padding: 1rem 2rem;
 }
 
 .btn i{
@@ -214,6 +224,10 @@ SEZIONE PLANNING
     margin: 3rem 0;
 }
 
+#planning .planning2 p{
+    color: var(--txt-black);
+}
+
 
 
 /*
@@ -237,6 +251,7 @@ SEZIONE TESTIMONIAL
 
 .section-center-text>*{
     margin: 1.5rem 0;
+    color: var(--txt-black);
 }
 
 #testimonial .item{
@@ -333,6 +348,7 @@ SEZIONE ABOUT US
 
 #about-us p{
     margin-top: 2rem;
+    color: var(--txt-black);
 }
 
 #about-us .img-quote-container{
@@ -379,6 +395,36 @@ SEZIONE GET STARTED
     padding: 2rem 1.5rem;
 }
 
+#get-started .middle-txt-container{
+    max-width: 500px;
+}
+
+#get-started .middle-txt-container>*{
+    color: var(--txt-white);
+    margin: 2rem 0;
+}
+
+#get-started .white-bold{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#get-started .yellow{
+    color: var(--txt-yellow);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#get-started i{
+    font-size: 0.5rem;
+}
+
+#get-started .btn{
+    font-size: 2rem;
+    border-radius: 40px;
+    color: var(--bgc-violet);
+}
+
 
 /*
 REGOLE ALLINEAMENTO TESTO CENTRLE
@@ -407,13 +453,9 @@ footer{
     background-color: var(--bgc-footer);
 }
 
-
-
-
-
-
-
-
+footer a{
+    color: var(--bgc-violet);
+}
 /*
 REGOLE MEDIA QUERY
 */
